@@ -37,7 +37,7 @@
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Busque sus productos" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
+              <button class="btn btn-secondary type="submit>Buscar</button>
             </form>
           </div>
         </div>
@@ -178,14 +178,18 @@
 </div>
 
 <div class="box4">
-    <h5>Formas de pago</h5>
-    <select name="formas-pago" >
-        <option>Formas de pago:</option>
-        <option>Mastercard</option>
-        <option>Visa</option>
-        <option>Paypal</option>
-        <option>American Express</option>
-    </div> 
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+      Formas de pago:
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+      <li><button class="dropdown-item" type="button">Mastercard</button></li>
+      <li><button class="dropdown-item" type="button">Visa</button></li>
+      <li><button class="dropdown-item" type="button">Paypal</button></li>
+      <li><button class="dropdown-item" type="button">American Express</button></li>
+    </ul>
+    </div>
+  </div> 
 
 </footer>
 
