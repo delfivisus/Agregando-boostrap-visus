@@ -1,11 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Noticia+Text:ital,wght@1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Noticia+Text:ital,wght@1,700&family=Oswald:wght@200&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
-.navbar-brand .navbar-expand-lg{
-    background-image: linear-gradient(to right, #8fbde0, #81b3db, #73a9d6, #659ed0, #5894cb, #6391cc, #6d8ecb, #788bca, #968ecb, #af92ca, #c496c7, #d69cc3);
-    
+.navbar{
+    background-image: linear-gradient(to right, #8fbde0, #81b3db, #73a9d6, #659ed0, #5894cb, #6391cc, #6d8ecb, #788bca, #968ecb, #af92ca, #c496c7, #d69cc3);   
+    height: 80px; 
+}
+.nav-item .nav-link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: large;
+}
+
+.nav-item .nav-link:hover{
+    background: rgba(0,0,0,0.3);
+    transform: scale(1.5);
+    transition: 0.5s;
+    border-radius: 50px;
 }
 
 .row{
@@ -15,22 +37,19 @@
     color: rgb(24, 24, 24);
     text-shadow: 2px 2px 7px rgb(53, 52, 52);
     font-size: 20px;
-
 }
 
 .index{
         border-style:ridge;border-radius: 15px;
         color: white;
         width: 200px;
-        border-color: rgb(67, 124, 155);
-        background-color: rgb(79, 154, 184);
+        border-color: rgb(115, 165, 193);
+        background-color: rgba(121, 179, 203, 0.836);
         border-width: 8px;
         padding: 10px 10px;
-        font-family: 'Lato', sans-serif;
-        text-align: center;
-        margin: 10px;
-
+        font-family:Verdana, Geneva, Tahoma, sans-serif
 }
+
 .pie-pagina{
     width: 100%;
     padding-top: 20px;
