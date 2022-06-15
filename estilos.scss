@@ -28,10 +28,11 @@
 }
 .card-text{
     color: rgb(24, 24, 24);
-    text-shadow: 2px 2px 7px rgb(53, 52, 52);
+    text-shadow: 2px 2px 7px rgb(78, 77, 77);
     font-size: 20px;
 }
-.index{
+
+.tit1{
     border-style:ridge;border-radius: 15px;
     color: white;
     width: 200px;
@@ -41,6 +42,11 @@
     padding: 10px 10px;
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
+
+.tit2{
+    @extend .tit1
+}
+
 .pie-pagina{
     width: 100%;
     padding-top: 20px;

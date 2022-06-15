@@ -30,11 +30,11 @@
 
 .card-text {
   color: rgb(24, 24, 24);
-  text-shadow: 2px 2px 7px rgb(53, 52, 52);
+  text-shadow: 2px 2px 7px rgb(78, 77, 77);
   font-size: 20px;
 }
 
-.index {
+.tit1, .tit2 {
   border-style: ridge;
   border-radius: 15px;
   color: white;
