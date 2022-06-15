@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  background-image: linear-gradient(to right, #8fbde0, #81b3db, #73a9d6, #659ed0, #5894cb, #6391cc, #6d8ecb, #788bca, #968ecb, #af92ca, #c496c7, #d69cc3);
+  height: 80px;
+}
+
+.nav-item .nav-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  font-size: large;
+}
+.nav-item .nav-link:hover {
+  background: rgba(0, 0, 0, 0.3);
+  transform: scale(1.5);
+  transition: 0.5s;
+  border-radius: 50px;
+}
+
+.row {
+  justify-content: space-between;
+}
+
+.card-text {
+  color: rgb(24, 24, 24);
+  text-shadow: 2px 2px 7px rgb(53, 52, 52);
+  font-size: 20px;
+}
+
+.index {
+  border-style: ridge;
+  border-radius: 15px;
+  color: white;
+  width: 200px;
+  border-color: rgb(115, 165, 193);
+  background-color: rgba(121, 179, 203, 0.836);
+  border-width: 8px;
+  padding: 10px 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pie-pagina {
+  width: 100%;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: rgb(70, 135, 196);
+  grid-gap: 100px;
+  background-image: linear-gradient(to right, #8fbde0, #81b3db, #73a9d6, #659ed0, #5894cb, #6391cc, #6d8ecb, #788bca, #968ecb, #af92ca, #c496c7, #d69cc3);
+}
+.pie-pagina h5 {
+  font-family: "Oswald", sans-serif;
+  font-size: large;
+  font-weight: 900;
+  margin-left: 10px;
+}
+.pie-pagina h5 p {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 10px;
+}
+.pie-pagina h5 p a {
+  color: rgb(0, 0, 0);
+  transition: all 300ms ease;
+  margin-right: 10px;
+}
+.pie-pagina h5 p a:hover {
+  color: beige;
+}
+
+/*# sourceMappingURL=estilos.css.map */
