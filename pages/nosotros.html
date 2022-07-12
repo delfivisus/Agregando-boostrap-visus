@@ -6,38 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conocenos un poco más</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../estilos.css">
+    <script src="https://kit.fontawesome.com/b335260b73.js" crossorigin="anonymous"></script>
     <meta name="description" content="Somos un negocio que se dedica a vender una gran variedad de productos, en el que estamos dispuestos a que tengas la mejor atención, envios rapidos y los mejores precios">
     <meta name="keywords" content="almacen, productos, rebajas, descuentos, variedad, limpieza, supermercado">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-            <a class="navbar-brand Logo" href="index.html"><img src="" alt="Logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="../index.html">Supermercado Los Visus</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pages/ayuda.html">Ayuda</a>
+                    <a class="nav-link" href="./ayuda.html">Ayuda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
                 </li>
-                    </a>
-    
-    
                 </ul>
-                <form class="d-flex">
+                <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Busque sus productos" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
@@ -46,12 +43,18 @@
         </nav>
     </header>
     <main>
+
+<div class="secciones">
+    <div class="texto">
         <h2>Sobre nosotros</h2>
-        <h4>Los Visus S.A</h4>
-        <p>Esta pequeña sociedad familiar está integrada por mi hija Delfina, mi mujer Andrea y yo, Osvaldo.Estamos ubicados en el barrio de Liniers desde hace aproximadamente 20 años, en un pequeño almacen en la calle Montiel. Nos hemos destacado siempre por la buena atención al cliente y relación que establecemos con el mismo y sin dejar atras los buenos precios que intentamos mantener desde siempre. Nos animamos a expandirnos digitalmente para así llegar a mas gente y poder satisfacer sus necesidades.Cualquien tipo de critica constructiva es bienvenida y puedes expresarla aquí mismo.</p><br>
-        <label for="">Comentarios</label><br>
-        <textarea name="" id="" cols="30" rows="6"placeholder="Escriba aquí"></textarea><br>
-        <input type="submit" value="Enviar">
+        <p>Esta pequeña sociedad familiar está integrada por mi hija Delfina, mi mujer Andrea y yo, Osvaldo.Estamos ubicados en el barrio de Liniers desde hace aproximadamente 20 años, en un pequeño almacen en la calle Montiel. Nos hemos destacado siempre por la buena atención al cliente y relación que establecemos con el mismo y sin dejar atras los buenos precios que intentamos mantener desde siempre. Nos animamos a expandirnos digitalmente para así llegar a mas gente y poder satisfacer sus necesidades.Cualquien tipo de critica constructiva es bienvenida y puedes expresarla aquí mismo.</p>
+    </div>
+    <div>
+        <img class="almacen" src="../assets/img/almacen.jpg" alt="Local por dentro"> 
+        <img class="almacen" src="../assets/img/almacen2.jpg" alt="Local por dentro">
+    </div>
+</div>
+
     </main>
     <footer class="pie-pagina">
         <div class="box1">
@@ -80,7 +83,7 @@
     
     <div class="box3">
         <h5>Trabaja con nosotros:</h5><br>
-        <a href="trabajaConNosotros.html">Trabaja con nosotros</a>
+        <a href="./trabajaConNosotros.html">Trabaja con nosotros</a>
     </div>
     
     <div class="box4">

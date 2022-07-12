@@ -3,34 +3,64 @@
   padding: 0px;
 }
 
+body {
+  overflow-x: hidden;
+  position: relative;
+  padding-bottom: 300px;
+  min-height: 100vh;
+}
+
+.carousel {
+  z-index: -2;
+}
+
+header {
+  background-color: #659ed0;
+}
+
 .navbar {
-  background-image: linear-gradient(to right, #8fbde0, #81b3db, #73a9d6, #659ed0, #5894cb, #6391cc, #6d8ecb, #788bca, #968ecb, #af92ca, #c496c7, #d69cc3);
   height: 80px;
 }
 
+.nav-item {
+  padding: 0px 20px;
+}
+
 .nav-item .nav-link {
-  color: rgb(255, 255, 255);
+  color: snow;
   text-decoration: none;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-align: center;
   font-size: large;
+  background-color: #659ed0;
 }
+
 .nav-item .nav-link:hover {
-  background: rgba(0, 0, 0, 0.3);
-  transform: scale(1.5);
+  background: rgba(0, 0, 0, 0.896);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 50px;
 }
 
 .row {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .card-text {
-  color: rgb(24, 24, 24);
-  text-shadow: 2px 2px 7px rgb(78, 77, 77);
+  color: #181818;
+  text-shadow: 2px 2px 7px #4e4d4d;
   font-size: 20px;
 }
 
@@ -39,43 +69,131 @@
   border-radius: 15px;
   color: white;
   width: 200px;
-  border-color: rgb(115, 165, 193);
+  border-color: #73a5c1;
   background-color: rgba(121, 179, 203, 0.836);
   border-width: 8px;
   padding: 10px 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-right: 35px;
+}
+
+.secciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+}
+
+.texto {
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: large;
+}
+
+.almacen {
+  width: 70%;
+  display: block;
+  margin-left: 17px;
+  margin-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+}
+
+.almacen:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .pie-pagina {
   width: 100%;
   padding-top: 20px;
+  position: absolute;
+  bottom: 0;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  background-color: rgb(70, 135, 196);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  background-color: #4687c4;
   grid-gap: 100px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#8fbde0), color-stop(#81b3db), color-stop(#73a9d6), color-stop(#659ed0), color-stop(#5894cb), color-stop(#6391cc), color-stop(#6d8ecb), color-stop(#788bca), color-stop(#968ecb), color-stop(#af92ca), color-stop(#c496c7), to(#d69cc3));
   background-image: linear-gradient(to right, #8fbde0, #81b3db, #73a9d6, #659ed0, #5894cb, #6391cc, #6d8ecb, #788bca, #968ecb, #af92ca, #c496c7, #d69cc3);
 }
+
 .pie-pagina h5 {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: large;
   font-weight: 900;
   margin-left: 10px;
 }
+
 .pie-pagina h5 p {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 600;
   margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-left: 10px;
 }
+
 .pie-pagina h5 p a {
-  color: rgb(0, 0, 0);
+  color: red;
+  -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   margin-right: 10px;
 }
+
 .pie-pagina h5 p a:hover {
   color: beige;
 }
 
+.pie-pagina .box2 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  margin-right: 10px;
+  text-align: center;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  font-size: 30px;
+}
+
+.pie-pagina .box2 .red-social a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.pie-pagina .box3 a {
+  color: black;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  margin-right: 10px;
+}
+
+.pie-pagina .box3 a:hover {
+  color: beige;
+}
+
+.pie-pagina .box1 figure p a {
+  color: black;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+  margin-right: 10px;
+}
+
+.pie-pagina .box1 figure p a:hover {
+  color: beige;
+}
 /*# sourceMappingURL=estilos.css.map */

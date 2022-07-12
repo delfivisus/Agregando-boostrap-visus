@@ -2,21 +2,38 @@
     margin: 0px;
     padding: 0px;
 }
-.navbar{
-    background-image: linear-gradient(to right, #8fbde0, #81b3db, #73a9d6, #659ed0, #5894cb, #6391cc, #6d8ecb, #788bca, #968ecb, #af92ca, #c496c7, #d69cc3);   
-    height: 80px; 
+body{
+    overflow-x: hidden;
+    position: relative;
+    padding-bottom: 300px;
+    min-height: 100vh;
 }
+
+.carousel{
+    z-index: -2;
+}
+
+header{
+    background-color: #659ed0;
+}
+.navbar{
+    height: 80px;
+}
+
 .nav-item{
+    padding: 0px 20px;
     .nav-link{
-        color: rgb(255, 255, 255);
+        color: rgb(255, 250, 250);
         text-decoration: none;
         justify-content: center;
         display: flex;
         justify-content: space-evenly;
         text-align: center;
         font-size: large;
+        background-color: #659ed0;
+
         &:hover{
-            background: rgba(0,0,0,0.3);
+            background: rgba(0, 0, 0, 0.896);
             transform: scale(1.5);
             transition: 0.5s;
             border-radius: 50px;
@@ -40,16 +57,45 @@
     background-color: rgba(121, 179, 203, 0.836);
     border-width: 8px;
     padding: 10px 10px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 35px;
 }
 
 .tit2{
     @extend .tit1
 }
 
+.secciones{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+.texto{
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size:large;
+}
+.almacen{
+    width: 70%;
+    display: block;
+    margin-left: 17px;
+    margin-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+
+    padding-right: 50px;
+    &:hover{
+        transform:scale(1.1);
+        transition: all 0.4s ease;
+    }
+}
+
 .pie-pagina{
     width: 100%;
     padding-top: 20px;
+    position: absolute;
+    bottom: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-color: rgb(70, 135, 196);
@@ -70,7 +116,7 @@
         margin-left: 10px;
     
         a{
-        color: rgb(0, 0, 0);
+        color: rgb(255, 0, 0);
         transition: all 300ms ease;
         margin-right: 10px;
             &:hover{
@@ -80,3 +126,37 @@
         }
     }
 }
+.pie-pagina .box2 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+    font-size: 30px;
+}
+.pie-pagina .box2 .red-social a:hover{
+    background-color: rgba(0,0,0,0.3);
+    }
+
+.pie-pagina .box3 a{
+    color: black;
+    transition: all 300ms ease;
+    margin-right: 10px;
+    }
+.pie-pagina .box3 a:hover{
+        color: beige;
+    }
+
+.pie-pagina  .box1 figure p a{
+    color: black;
+    transition: all 300ms ease;
+    margin-right: 10px;
+    }
+    
+.pie-pagina  .box1 figure p a:hover{
+    color: beige;
+    }
