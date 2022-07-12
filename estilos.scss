@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Noticia+Text:ital,wght@1,700&family=Oswald:wght@200&display=swap');
+
+font-family: 'Lato', sans-serif;
+font-family: 'Noticia Text', serif;
+font-family: 'Oswald', sans-serif;
+
+&font1: 'Lato', sans-serif
+&font2:'Noticia Text', serif
+&font3:'Oswald', sans-serif
+
+
+
+
+>>>>>>> 2ad16f9c51693db9eb764f9ccff16cee341e5e4d
 *{
     margin: 0px;
     padding: 0px;
@@ -45,11 +61,18 @@ header{
 }
 .card-text{
     color: rgb(24, 24, 24);
+<<<<<<< HEAD
     text-shadow: 2px 2px 7px rgb(78, 77, 77);
     font-size: 20px;
 }
 
 .tit1{
+=======
+    text-shadow: 2px 2px 7px rgb(53, 52, 52);
+    font-size: 20px;
+}
+.index{
+>>>>>>> 2ad16f9c51693db9eb764f9ccff16cee341e5e4d
     border-style:ridge;border-radius: 15px;
     color: white;
     width: 200px;
@@ -60,11 +83,13 @@ header{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding-right: 35px;
 }
+<<<<<<< HEAD
 
 .tit2{
     @extend .tit1
 }
 
+<<<<<<< HEAD
 .secciones{
     display: flex;
     align-items: center;
@@ -91,6 +116,10 @@ header{
     }
 }
 
+=======
+=======
+>>>>>>> 2ad16f9c51693db9eb764f9ccff16cee341e5e4d
+>>>>>>> d88ef9991b66a2a2f1a7aa06e8118215a49eff28
 .pie-pagina{
     width: 100%;
     padding-top: 20px;

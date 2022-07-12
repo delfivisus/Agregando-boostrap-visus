@@ -1,8 +1,11 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
+/* Error: expected "{".
+ *   ,
+ * 3 | @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Noticia+Text:ital,wght@1,700&family=Oswald:wght@200&display=swap');
+ *   |                                                                                                                                                     ^
+ *   '
+ *   estilos.scss 3:149  root stylesheet */
 
+<<<<<<< HEAD
 body {
   overflow-x: hidden;
   position: relative;
@@ -197,3 +200,15 @@ header {
   color: beige;
 }
 /*# sourceMappingURL=estilos.css.map */
+=======
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: expected \"{\".\a   \2577 \a 3 \2502  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Noticia+Text:ital,wght@1,700&family=Oswald:wght@200&display=swap');\d\a   \2502                                                                                                                                                      ^\a   \2575 \a   estilos.scss 3:149  root stylesheet";
+}
+>>>>>>> d88ef9991b66a2a2f1a7aa06e8118215a49eff28
