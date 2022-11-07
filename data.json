@@ -1,0 +1,19 @@
+[
+    
+    {"nombre":"Bolsa Pedigree 21kg",
+    "precio":8500, 
+    "id":1}, 
+    {"nombre":"Bolsa Dogchow 21kg",
+    "precio":10500, 
+    "id":2}, 
+    {"nombre":"Bolsa Sabrocitos 21kg",
+    "precio":7200, 
+    "id":3},
+    {"nombre":"Bolsa Raza 21kg",
+    "precio":7500, 
+    "id":4}, 
+    {"nombre":"Bolsa OldPrice Cordero 21kg",
+    "precio":11000, 
+    "id":5} 
+    
+]
