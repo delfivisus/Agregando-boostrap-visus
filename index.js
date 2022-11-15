@@ -60,3 +60,60 @@ const traerProductos = async () => {
 };
 
 traerProductos();
+
+const div = document.getElementById("div")
+const boton =document.getElementById("boton")
+let productos = [
+    {
+        id= 1,
+        articulo:"Bolsa Pedigree",
+        imagen:"https://http2.mlstatic.com/D_NQ_NP_813120-MLA49656683084_042022-V.jpg",
+        precio: 8500,
+
+    }
+    {
+        id= 2,
+        articulo:"Bolsa Dogchow",
+        imagen:"https://http2.mlstatic.com/D_NQ_NP_793926-MLA43229058650_082020-O.webp",
+        precio: 10500,
+    } 
+]
+
+let carrito = []
+
+
+productos.forEach(producto => {
+    let productoRenderizado = document.createElement("div")
+    productoRenderizado.innerHTML = 
+    <h3>articulo:${producto.articulo}</h3>
+    <img src= "${producto.imagen}">
+    <span>precio: $${producto.precio}</span>
+    <button id=${producto.id}>Comprar</button>
+    
+    const boton = document.getElementById(producto.id)
+    div.append(productoRenderizado)
+    boton.addEventListener("click", () => comprarProducto(producto))
+});
+
+const comprarProducto = (producto) => {
+    let productoExiste = carrito.find(item => item.id === producto.id)
+    if(productoExiste === undefined){
+        carrito.push({
+            id: producto.id,
+            articulo: producto.articulo,
+            imagen: producto.imagen,
+            precio: producto.precio,
+            cantidad: 1
+        })
+    }else{
+        productoExiste.precio = productoExiste.precio + producto.precio
+        productoExiste.cantidad = productoExiste,cantidad + 1
+    }
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+}
+localStorage.setItem("registro", JSON.stringify(usuarios))
+let returnCarrito = JSON.parse(localStorage.getItem("carrito"))
+
+boton.addEventListener("click", () => console.log(carrito))
+ */</img>
