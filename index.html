@@ -72,80 +72,76 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    <!--comienzan los productos-->
-    <h2 class="tit1">Ofertas de la Semana</h2>
-    <section class="row">
-      
-      <div class="card" style="width: 15rem;">
-        <img src="./assets/img/leche.jpg" class="card-img-top" alt="leche">
-        <div class="card-body">
-          <h3 class="card-title">Leche SanCor</h3>
-          <p class="card-text">$240</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-      <div class="card" style="width: 15rem;">
-        <img src="./assets/img/azucar.jpg" class="card-img-top" alt="azucar">
-        <div class="card-body">
-          <h3 class="card-title">Azucar Domino</h3>
-          <p class="card-text">$190</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-      <div class="card" style="width: 15rem;">
-        <img src="./assets/img/oreo.jpg" class="card-img-top" alt="oreo">
-        <div class="card-body">
-          <h3 class="card-title">Oreo Galletitas</h3>
-          <p class="card-text">$220</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-      <div class="card" style="width: 15rem;">
-        <img src="./assets/img/manteca.jpg" class="card-img-top" alt="manteca">
-        <div class="card-body">
-          <h3 class="card-title">Manteca Tonadita</h3>
-          <p class="card-text">$200</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
 
-    </section>
-    <h2 class="tit2">Productos Destacados</h2>
-        <section class="row">
-      
-      <div class="card" style="width: 15rem;">
-        <img src="./assets/img/atun.jpg" class="card-img-top" alt="atun">
-        <div class="card-body">
-          <h3 class="card-title">Atun La Campagnola</h3>
-          <p class="card-text">$400</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-      <div class="card" style="width: 15rem;">
-        <img src="./assets/img/natura.jpg" class="card-img-top" alt="aceite">
-        <div class="card-body">
-          <h3 class="card-title">Aceite Natura</h3>
-          <p class="card-text">$650</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-      <div class="card" style="width: 15rem;">
-        <img src="./assets/img/lata.jpg" class="card-img-top" alt="lata">
-        <div class="card-body">
-          <h3 class="card-title">Lata Scheineider</h3>
-          <p class="card-text">$320</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
-      </div>
-      <div class="card" style="width: 15rem;">
-        <img src="./assets/img/papel.jpg" class="card-img-top" alt="papel">
-        <div class="card-body">
-          <h3 class="card-title">Papel</h3>
-          <p class="card-text">$450</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
-        </div>
+      <div class="container">
+        <h1>Carrito</h1>
+        <hr>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Item</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Accion</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+        </table>
+        <tbody id="items"></tbody>
+        <tfoot>
+          <tr id="footer">
+            <th scope="row" colspan="5">Carrito vacio - comience a comprar!</th>
+          </tr>
+        </tfoot>
+      </table>
 
-    
-    </section>
+        <div class="row" id="cards"></div>
+      </div>
+
+      <template id="template-footer">
+        <th scope="row" colspan="2"> Total Productos</th>
+        <td>10</td>
+        <td>
+          <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+            vaciar todo
+          </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+      </template>
+
+
+      <template id="template-card">
+        <div class="col-12 mb-2">
+          <div class="card">
+            <img src="" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5>Titulo</h5>
+              <p>Precio</p>
+              <button class="btn btn-dark">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </template>
+
+      <template id="template-carrito">
+        <tr>
+          <th scope="row">id</th>
+          <td>Bolsa Pedigree 21k</td>
+          <td>1</td>
+          <td>
+            <button class="btn btn-info btn-sm">
+              +
+            </button>
+            <button class="btn btn-danger btn-sm">
+              -
+            </button>
+          </td>
+          <td>$ <span>8500</span></td>
+        </tr>
+      </template>
+
+
+
 </main>
   <footer class="pie-pagina">
     <div class="box1">

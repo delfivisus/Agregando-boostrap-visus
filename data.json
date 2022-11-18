@@ -2,32 +2,52 @@
     
     {   "nombre":"Bolsa Pedigree 21kg",
         "precio":8500, 
-        "id":1}, 
+        "id":1,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_813120-MLA49656683084_042022-V.jpg"
+    }, 
     {   "nombre":"Bolsa Dogchow 21kg",
         "precio":10500, 
-        "id":2}, 
+        "id":2,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_793926-MLA43229058650_082020-O.webp"
+    }, 
     {   "nombre":"Bolsa Sabrocitos 21kg",
         "precio":7200, 
-        "id":3},
+        "id":3,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_605185-MLA43702799162_102020-O.jpg"
+    },
     {   "nombre":"Bolsa Raza 21kg",
         "precio":7500, 
-        "id":4}, 
+        "id":4,
+        "img": "https://perrosygatosfood.com.ar/wp/wp-content/uploads/2019/09/RAZA_PERRO_CARNE.jpg"
+    }, 
     {   "nombre":"Bolsa OldPrice Cordero 21kg",
         "precio":11000, 
-        "id":5}, 
+        "id":5,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_758593-MLA48285634479_112021-V.jpg"
+    }, 
     {   "nombre":"Bolsa Pedigree 10kg",
         "precio":6000,
-        "id": 6},
+        "id": 6,
+        "img":"http://d3ugyf2ht6aenh.cloudfront.net/stores/001/042/807/products/cpcsink1-9a659b4d0241a5904915734748642429-640-0.png"
+    },
     {   "nombre":"Bolsa Dogchow 10kg",
         "precio":7500,
-        "id": 7},
+        "id": 7,
+        "img": "https://www.purina-latam.com/sites/g/files/auxxlc391/files/styles/social_share_large/public/dog-chow-hogarenos-adulto-producto.png?itok=Knhk49N1"
+    },
     {   "nombre":"Bolsa Sabrocitos 10kg",
         "precio":4500,
-        "id": 8},
+        "id": 8,
+        "img": "https://jumboargentina.vtexassets.com/arquivos/ids/674833/Sabrositos-Cachorro-Mix-Carnes-cereales-Y-Veg-1-880326.jpg?v=637720041802970000"
+    },
     {   "nombre":"Bolsa Raza 10kg",
         "precio":5000,
-        "id": 9},
+        "id": 9,
+        "img": "https://http2.mlstatic.com/D_NQ_NP_777180-MLA41652441203_052020-O.jpg"
+    },
     {   "nombre":"Bolsa OldPrice Cordero 10kg",
         "precio":8000,
-        "id": 10}
+        "id": 10,
+        "img": "https://glotonpets.com.ar/wp-content/uploads/2020/10/cordero2-a8cbf6af0140e74b9a15929444765233-640-0.jpg"
+    }
 ]
